@@ -73,3 +73,21 @@
 		background-image: url("../../assets/img/fifa.jpg");
 	}
 }
+
+.rl {
+	.teamPage__cover {
+		background-image: url("../../assets//img/rocketleaguebacking.png");
+	}
+
+	.teamPage__body {
+		.teamPage__content {
+			.teamPage__content--team {
+				display: flex;
+				img {
+					width: 20%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
