@@ -4,18 +4,56 @@
 	max-height: 80px;
 	height: 80px;
 	border-bottom: 1px solid #313131;
+	position: relative;
 
 	.container {
 		width: 80%;
 	}
 
-	&__right {
-		width: 30vw;
+	&__left {
+		width: 40%;
+	}
 
-		.links {
+	&__right {
+		width: 60%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.interface__pages {
+			height: 100%;
+		}
+
+		.linkGroup {
 			color: #171718;
 			font-weight: 500;
 			transition: all 0.5s;
+			height: 100%;
+			margin-bottom: 0;
+			margin-top: 0;
+			list-style: none;
+			li {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				span {
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+
+		.links {
+			margin-right: 2em;
+			color: #171718;
+
+			svg {
+				font-size: $font-size;
+				vertical-align: middle;
+				padding-left: 0.5em;
+			}
 			&:hover {
 				color: $xmplfy-blue;
 				font-weight: 600;
@@ -32,5 +70,26 @@
 	img {
 		width: 5vh;
 		height: auto;
+	}
+}
+
+.dropdown-content {
+	position: absolute;
+	background-color: $cream;
+	padding: 1rem;
+	border-top: 3px solid $xmplfy-blue;
+	top: 80px;
+	min-width: 130px;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0.5em;
+		li {
+			font-size: $font-size;
+			padding-bottom: 0.75em;
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
 	}
 }

@@ -7,9 +7,6 @@
 $blue-brand: #0099ff;
 $blue-accent: #00090e57;
 $blue-secondary: #0790eb;
-$cream: #eef4f7;
-$xmp-gradient-from: #2476a8;
-$xmp-gradient-to: rgba(31, 82, 150, 0);
 
 .blue {
 	color: $xmplfy-blue;
@@ -78,7 +75,8 @@ html {
 	color: #838383;
 }
 
-.links {
+.links,
+.linkGroup {
 	list-style: none;
 	text-decoration: none;
 	color: #fff;
