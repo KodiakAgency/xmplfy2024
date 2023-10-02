@@ -1,3 +1,5 @@
+@import "./utils/variables";
+
 .about_container {
 	display: flex;
 	justify-content: center;
@@ -14,7 +16,7 @@
 		line-height: 0;
 	}
 	h2 {
-		font-size: 65px;
+		font-size: $heading-size;
 		color: #000000;
 	}
 

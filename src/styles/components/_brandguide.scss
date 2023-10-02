@@ -1,3 +1,5 @@
+@import "./utils/variables";
+
 .container {
 	width: 100%;
 }
@@ -111,7 +113,7 @@
 			&_blue {
 				width: 400px;
 				height: 320px;
-				background-color: #0099ff;
+				background-color: $xmplfy-blue;
 				border-radius: 6px;
 				.codes {
 					display: flex;
