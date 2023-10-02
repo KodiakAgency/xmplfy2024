@@ -3,16 +3,16 @@ import React from "react";
 function About() {
 	return (
 		<>
-			<div className='about_container'>
-				<div className='about '>
-					<div className='text'>
+			<div className="about_container">
+				<div className="about ">
+					<div className="text">
 						<h2>About.</h2>
 						<p>We are xmplfy.</p>
 						<br></br>
-						<div className='na_stand'>
+						<div className="na_stand">
 							<p>
 								At our core, Xmplfy is more than just an esports
-								organization – we are a North American movement.
+								organization; we are a North American movement.
 								Born and bred on this continent, we carry the
 								spirit and tenacity of North America in
 								everything we do. Our commitment? To raise the
@@ -21,7 +21,7 @@ function About() {
 								<br></br>
 								<br></br>
 								From day one, North America wasn't just our
-								target – it was our essence. Our focus is to
+								target; it was our essence. Our focus is to
 								champion the North American stars of yesterday,
 								today, and tomorrow. We are wholeheartedly
 								devoted to nurturing, mentoring, and propelling
@@ -50,10 +50,10 @@ function About() {
 								<br />
 								<br />
 								As 2024 beckons, the horizon brims with
-								opportunities. Our vision is clear – to be the
+								opportunities. Our vision is clear: to be the
 								torchbearers for North American esports. Our
-								roots are deep, our resolve unshakeable. We are
-								North America's pulse. We are Xmplfy!
+								roots are deep, and our resolve is unshakeable.
+								We are North America's pulse. We are Xmplfy!
 							</p>
 						</div>
 					</div>
