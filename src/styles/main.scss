@@ -4,10 +4,13 @@
 @import "./components/homepage";
 @import "./components/footer";
 @import "./components/brandguide";
+@import "./components/about";
 
 html {
 	background: #000;
 	color: #fff;
+	margin: 0;
+	padding: 0;
 }
 
 body {
