@@ -1,0 +1,58 @@
+@import "../components/utils/variables";
+
+.teamPage {
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: $gutter-x;
+
+	&__cover {
+		width: 100%;
+		min-height: 40vh;
+		height: 40vh;
+		background-image: url("../../assets/img/cs2.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0 12%;
+	}
+	&__body {
+		flex-direction: row;
+		background-color: #2a2a2a;
+		margin: -80px auto 0 auto;
+		border-radius: 12px;
+		padding: 80px;
+		background-repeat: no-repeat;
+		background-size: 492px 339px;
+		background-position: calc(100% - 80px) center;
+		box-sizing: border-box;
+		max-width: 80%;
+		h2 {
+			font-size: calc($heading-size * 2);
+			color: $xmplfy-blue;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		&--team {
+			display: flex;
+			gap: 4rem;
+			align-items: center;
+			font-size: $font-size-lg;
+		}
+	}
+
+	&__players {
+		max-width: 80%;
+		margin: auto;
+		margin-top: calc($gutter-x * 3);
+
+		&--cards {
+			padding-top: $gutter-x;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}

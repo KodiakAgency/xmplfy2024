@@ -11,6 +11,10 @@ $cream: #eef4f7;
 $xmp-gradient-from: #2476a8;
 $xmp-gradient-to: rgba(31, 82, 150, 0);
 
+.blue {
+	color: $xmplfy-blue;
+}
+
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -143,4 +147,11 @@ html {
 
 .w-100 {
 	width: 100%;
+}
+
+.heading {
+	font-size: $heading-size;
+	&--dark {
+		color: #2a2a2a;
+	}
 }

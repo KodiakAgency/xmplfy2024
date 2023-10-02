@@ -1,0 +1,54 @@
+.playerCard {
+	background-image: url("../../assets/img/player-tile-shape.svg");
+	background-color: #2a2a2a;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+	overflow: hidden;
+	width: 430px;
+	height: 202px;
+	color: #fff;
+	border-radius: 12px;
+	display: flex;
+	margin-bottom: 40px;
+	margin-right: 40px;
+
+	&__image {
+		width: 45%;
+	}
+	&__details {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1.5rem 1rem;
+		width: 55%;
+		&--bottom {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			a {
+				color: $xmplfy-blue;
+				margin-right: 2em;
+				font-size: $icon-size;
+			}
+		}
+	}
+
+	&__position,
+	&__name {
+		font-size: $font-size;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__alias {
+		margin: 0;
+		color: #fff;
+		padding: 0.25em 0;
+	}
+
+	&__name {
+		color: #999999;
+	}
+}
