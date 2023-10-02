@@ -34,7 +34,7 @@ const rocketleague = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"Zekers"}
-							Name={"Richard Last"}
+							Name={"Austin Thompson"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
@@ -42,7 +42,7 @@ const rocketleague = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"Asuna"}
-							Name={"Jacob Last"}
+							Name={"Chris Costanzo"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
@@ -50,7 +50,7 @@ const rocketleague = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"Roupus"}
-							Name={"Chandler Knapp"}
+							Name={"Henry Godfredson"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}

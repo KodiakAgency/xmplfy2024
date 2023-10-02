@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { RiTwitterXFill, RiTwitchFill, RiYoutubeFill } from "react-icons/ri";
+import placeholderImage from "../assets/img/207x192-Default.png";
 
 const PlayerCard = ({
 	Position,
@@ -11,7 +13,9 @@ const PlayerCard = ({
 }) => {
 	return (
 		<div className='playerCard'>
-			<div className='playerCard__image'></div>
+			<div className='playerCard__image'>
+				<Image src={placeholderImage} alt='' />
+			</div>
 			<div className='playerCard__details'>
 				<div className='playerCard__details--top'>
 					<h4 className='playerCard__position blue'>{Position}</h4>
