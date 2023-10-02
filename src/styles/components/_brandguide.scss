@@ -1,0 +1,117 @@
+.container {
+	width: 100%;
+}
+.brand_container {
+	height: calc(100vh - 16vh);
+	display: flex;
+	width: 60%;
+	margin: auto;
+	line-height: 4px;
+
+	.guideline {
+		padding-top: 2vh;
+	}
+	h2 {
+		font-size: 32px;
+		font-weight: 500;
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: 400;
+		color: #919191;
+	}
+
+	.logo {
+		height: 12vh;
+		padding-top: 2vh;
+		&_text {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.branding {
+			cursor: auto;
+			padding-top: 2vh;
+			line-height: normal;
+			color: #919191;
+		}
+	}
+
+	.logo_items {
+		padding-top: 2vh;
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: 2/3;
+		height: 15vh;
+		width: 100%;
+		gap: 2vh;
+	}
+
+	.logo_download {
+		padding-top: 2vh;
+	}
+
+	.item {
+		display: flex;
+		background-color: blue;
+		width: 45%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.color {
+		padding-top: 5vh;
+		&_text {
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		&_items {
+			padding-top: 3vh;
+			justify-content: space-between;
+
+			&_white {
+				width: 400px;
+				height: 400px;
+				background-color: white;
+				.codes {
+					display: flex;
+					flex-direction: column;
+					gap: 2vh;
+					width: 80%;
+					height: 80%;
+					margin: 60% auto auto auto;
+					color: black;
+				}
+			}
+			&_blue {
+				width: 400px;
+				height: 400px;
+				background-color: blue;
+				.codes {
+					display: flex;
+					flex-direction: column;
+					gap: 2vh;
+					width: 80%;
+					height: 80%;
+					margin: 60% auto auto auto;
+					color: black;
+				}
+			}
+			&_black {
+				width: 400px;
+				height: 400px;
+				background-color: rgb(65, 64, 64);
+				.codes {
+					display: flex;
+					flex-direction: column;
+					gap: 2vh;
+					width: 80%;
+					height: 80%;
+					margin: 60% auto auto auto;
+					color: black;
+				}
+			}
+		}
+	}
+}
