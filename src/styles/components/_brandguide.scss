@@ -2,13 +2,26 @@
 	width: 100%;
 }
 .brand_container {
+	background: rgb(14, 13, 13);
 	height: calc(100vh - 16vh);
 	display: flex;
-	width: 60%;
+	width: 100%;
 	margin: auto;
 	line-height: 4px;
 
+	.logoStyle {
+		width: 10%;
+		height: auto;
+	}
+
+	.logoStyleLong {
+		width: 40%;
+		height: auto;
+	}
+
 	.guideline {
+		margin: auto;
+		width: 60%;
 		padding-top: 2vh;
 	}
 	h2 {
@@ -22,8 +35,8 @@
 	}
 
 	.logo {
-		height: 12vh;
-		padding-top: 2vh;
+		height: 15vh;
+		padding-top: 1vh;
 		&_text {
 			font-size: 18px;
 			font-weight: 700;
@@ -31,32 +44,42 @@
 
 		.branding {
 			cursor: auto;
-			padding-top: 2vh;
+			padding-top: 1vh;
 			line-height: normal;
 			color: #919191;
 		}
 	}
 
 	.logo_items {
-		padding-top: 2vh;
 		display: flex;
 		flex-wrap: wrap;
 		flex-basis: 2/3;
-		height: 15vh;
+		height: 20vh;
 		width: 100%;
 		gap: 2vh;
 	}
 
 	.logo_download {
-		padding-top: 2vh;
+		.links {
+			font-size: 14px;
+			font-weight: 400;
+		}
 	}
 
-	.item {
+	.item,
+	.item_white {
 		display: flex;
-		background-color: blue;
-		width: 45%;
+		background-color: #000000;
+		width: 49%;
 		align-items: center;
 		justify-content: center;
+		height: 8vh;
+
+		border-radius: 6px;
+
+		&_white {
+			background-color: #ffffff;
+		}
 	}
 
 	.color {
@@ -67,49 +90,161 @@
 		}
 
 		&_items {
-			padding-top: 3vh;
+			padding-top: 2vh;
 			justify-content: space-between;
 
 			&_white {
 				width: 400px;
-				height: 400px;
-				background-color: white;
+				height: 320px;
+				background-color: #ffffff;
+				border-radius: 6px;
 				.codes {
 					display: flex;
 					flex-direction: column;
 					gap: 2vh;
 					width: 80%;
 					height: 80%;
-					margin: 60% auto auto auto;
+					margin: 50% auto auto auto;
 					color: black;
 				}
 			}
 			&_blue {
 				width: 400px;
-				height: 400px;
-				background-color: blue;
+				height: 320px;
+				background-color: #0099ff;
+				border-radius: 6px;
 				.codes {
 					display: flex;
 					flex-direction: column;
 					gap: 2vh;
 					width: 80%;
 					height: 80%;
-					margin: 60% auto auto auto;
+					margin: 50% auto auto auto;
 					color: black;
 				}
 			}
 			&_black {
 				width: 400px;
-				height: 400px;
-				background-color: rgb(65, 64, 64);
+				height: 320px;
+				background-color: #000000;
+				border-radius: 6px;
 				.codes {
 					display: flex;
 					flex-direction: column;
 					gap: 2vh;
 					width: 80%;
 					height: 80%;
-					margin: 60% auto auto auto;
-					color: black;
+					margin: 50% auto auto auto;
+					color: rgb(255, 250, 250);
+				}
+			}
+		}
+	}
+}
+
+/* Define a media query for phone resolutions (up to 768px) */
+@media (max-width: 768px) {
+	.brand_container {
+		background: rgb(14, 13, 13);
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px;
+
+		.logoStyle {
+			width: 20%;
+		}
+
+		.logoStyleLong {
+			width: 60%;
+		}
+
+		.guideline {
+			width: 100%;
+			padding-top: 2vh;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: 500;
+		}
+
+		h3 {
+			font-size: 16px;
+			font-weight: 400;
+			color: #919191;
+		}
+
+		.logo {
+			height: auto;
+			padding-top: 1vh;
+
+			&_text {
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			.branding {
+				cursor: auto;
+				padding-top: 1vh;
+				line-height: normal;
+				color: #919191;
+			}
+		}
+
+		.logo_items {
+			flex-direction: column;
+			gap: 16px;
+			height: auto;
+
+			.links {
+				font-size: 14px;
+				font-weight: 400;
+			}
+		}
+
+		.item,
+		.item_white {
+			width: 100%;
+			height: auto;
+			margin-bottom: 16px;
+
+			&_white {
+				background-color: #ffffff;
+			}
+		}
+
+		.color {
+			padding-top: 2vh;
+
+			&_text {
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			&_items {
+				padding-top: 2vh;
+				justify-content: space-between;
+
+				&_white,
+				&_blue,
+				&_black {
+					width: 100%;
+					max-width: 400px;
+					height: auto;
+					margin-bottom: 16px;
+					border-radius: 6px;
+
+					.codes {
+						display: flex;
+						flex-direction: column;
+						gap: 16px;
+						width: 80%;
+						height: 80%;
+						margin: 50% auto auto auto;
+						color: black;
+					}
 				}
 			}
 		}
