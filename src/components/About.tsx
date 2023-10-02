@@ -7,7 +7,7 @@ function About() {
 				<div className="about ">
 					<div className="text">
 						<h2>About.</h2>
-						<p>We are xmplfy.</p>
+						<p>We are xmplfy</p>
 						<br></br>
 						<div className="na_stand">
 							<p>
