@@ -63,7 +63,7 @@
 
 	.logo_download {
 		.links {
-			font-size: 14px;
+			font-size: $font-size;
 			font-weight: 400;
 		}
 	}
@@ -201,7 +201,7 @@
 			height: auto;
 
 			.links {
-				font-size: 14px;
+				font-size: $font-size;
 				font-weight: 400;
 			}
 		}
