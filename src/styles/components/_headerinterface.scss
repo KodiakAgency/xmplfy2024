@@ -1,0 +1,30 @@
+.interface {
+	max-height: 80px;
+	height: 80px;
+	border-bottom: 1px solid #313131;
+
+	.container {
+		width: 80%;
+	}
+
+	&__right {
+		width: 30vw;
+
+		.links {
+			color: #171718;
+			font-weight: 500;
+			transition: all 0.5s;
+		}
+	}
+}
+.branding {
+	cursor: pointer;
+	height: 35px;
+	width: auto;
+	align-items: center;
+
+	img {
+		width: 5vh;
+		height: auto;
+	}
+}

@@ -1,0 +1,140 @@
+$blue-brand: #0099ff;
+$blue-accent: #00090e57;
+$blue-secondary: #0790eb;
+$cream: #eef4f7;
+$xmp-gradient-from: #2476a8;
+$xmp-gradient-to: rgba(31, 82, 150, 0);
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+	font-family: "Poppins";
+}
+
+.gradient {
+	background: -webkit-linear-gradient(right, $blue-secondary, $blue-accent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.container {
+	max-width: 95%;
+	margin: auto;
+}
+
+.height {
+	height: 100%;
+}
+
+.HeightFill {
+	height: 100vh;
+}
+
+.centeblue {
+	margin: auto;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+.justify-space-around {
+	justify-content: space-around;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.align-items-start {
+	align-items: flex-start;
+}
+
+.text-color-light {
+	font-size: 15px;
+	color: #838383;
+}
+
+.links {
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	font-weight: 600;
+	cursor: pointer;
+}
+.scale-p5 {
+	scale: 0.5;
+}
+.scale-2 {
+	scale: 2;
+}
+.scale-3 {
+	scale: 3;
+}
+
+.link {
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	&:visited {
+		color: #fff;
+	}
+}
+
+.btn {
+	border: 1px solid $blue-brand;
+	padding: 8px 16px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	// margin: 0 1em;
+	&--primary {
+		background-image: linear-gradient(
+			to top,
+			$xmp-gradient-from,
+			$xmp-gradient-to
+		);
+		svg {
+			margin-left: 0.5em;
+		}
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.active {
+	color: $blue-brand;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.absolute.centeblue {
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.w-100 {
+	width: 100%;
+}

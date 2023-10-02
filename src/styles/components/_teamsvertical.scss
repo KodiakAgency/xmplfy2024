@@ -1,0 +1,128 @@
+.teamsVertical {
+	align-items: flex-start;
+	max-height: 100vh;
+	height: calc(100vh - 16vh - 80px);
+	&__section {
+		height: calc(100vh - 16vh - 80px);
+		overflow: hidden;
+		position: relative;
+		// border: 1px solid #323232;
+		.team-cs {
+			transition: 1s all;
+			display: flex;
+			height: calc(100vh - 16vh - 80px);
+			width: 25vw;
+			//   background-image: url(../../assets/img/csgobacking.png);
+			background-size: cover;
+			background-position: 30%;
+			justify-content: center;
+			align-items: center;
+			filter: grayscale(95%);
+
+			.icons {
+				transition: 1s;
+				filter: invert(1);
+				width: 100px;
+				height: auto;
+			}
+			&:hover {
+				transition: 1s all;
+				filter: grayscale(0%);
+				.icons {
+					transition: 1s;
+					filter: invert(1) drop-shadow(0px 10px 10px black);
+				}
+			}
+		}
+
+		.team-rl {
+			transition: 1s all;
+			display: flex;
+			height: calc(100vh - 16vh - 80px);
+			width: 25vw;
+			background-image: url(../../assets/img/rocket-league-backing.jpg);
+			background-size: cover;
+			background-position: 40%;
+			justify-content: center;
+			align-items: center;
+			filter: grayscale(95%);
+			.icons {
+				transition: 1s;
+				filter: invert(0);
+				width: 100px;
+				height: auto;
+			}
+			&:hover {
+				transition: 1s all;
+				filter: grayscale(0%);
+				.icons {
+					transition: 1s;
+					filter: invert(0) drop-shadow(0px 10px 10px black);
+				}
+			}
+		}
+
+		.team-apex {
+			transition: 1s all;
+			display: flex;
+			height: calc(100vh - 16vh - 80px);
+			width: 25vw;
+			background-image: url(../../assets/img/apex-backing.jpeg);
+			background-size: cover;
+			background-position: 50%;
+			justify-content: center;
+			align-items: center;
+			filter: grayscale(95%);
+			.icons {
+				transition: 1s;
+				filter: invert(0);
+				width: 100px;
+				height: auto;
+			}
+			&:hover {
+				transition: 1s all;
+				filter: grayscale(0%);
+				.icons {
+					transition: 1s;
+					filter: invert(0) drop-shadow(0px 10px 10px black);
+				}
+			}
+		}
+		.team-cod {
+			transition: 1s all;
+			display: flex;
+			height: calc(100vh - 16vh - 80px);
+			width: 25vw;
+			background-image: url(../../assets/img/cod-backing.jpeg);
+			background-size: cover;
+			background-position: 50%;
+			justify-content: center;
+			align-items: center;
+			filter: grayscale(95%);
+			.icons {
+				transition: 1s;
+				filter: invert(1);
+				width: 150px;
+				height: auto;
+			}
+			&:hover {
+				transition: 1s all;
+				filter: grayscale(0%);
+				.icons {
+					transition: 1s;
+					filter: invert(1) drop-shadow(0px 10px 10px black);
+				}
+			}
+		}
+	}
+}
+
+.teams-4 {
+	max-width: 25%;
+	width: 25%;
+}
+
+.teams-3 {
+	max-width: 33.33%;
+	width: 33.33%;
+}
