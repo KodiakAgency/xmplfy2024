@@ -5,12 +5,15 @@
 	justify-content: center;
 	background-color: #ffffff;
 	width: 100%;
-	height: 40vh;
+	height: auto;
 }
 
 .about {
 	width: 70%;
 	padding-top: 1vh;
+	height: max-content;
+	margin-bottom: $gutter-x;
+	margin-top: $gutter-x;
 
 	.text {
 		line-height: 0;
@@ -18,6 +21,8 @@
 	h2 {
 		font-size: $heading-size;
 		color: #000000;
+		margin-bottom: $heading-gutter;
+		line-height: unset;
 	}
 
 	p {

@@ -16,6 +16,10 @@
 			color: #171718;
 			font-weight: 500;
 			transition: all 0.5s;
+			&:hover {
+				color: $xmplfy-blue;
+				font-weight: 600;
+			}
 		}
 	}
 }
