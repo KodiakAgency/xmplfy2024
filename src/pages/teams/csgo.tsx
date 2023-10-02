@@ -40,7 +40,7 @@ const csgo = () => {
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
-							Position={"Rifler"}
+							Position={"IGL"}
 							Alias={"nrb"}
 							Name={"Nicholas Brugna"}
 							x_link={"https://x.com/nrbcs"}
@@ -48,7 +48,7 @@ const csgo = () => {
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
-							Position={"Rifler"}
+							Position={"AWP"}
 							Alias={"Hoozh"}
 							Name={"Aidan Labaschin"}
 							x_link={"https://x.com/hoozhur"}
@@ -75,10 +75,10 @@ const csgo = () => {
 				</div>
 
 				<div className='teamPage__players'>
-					<h2 className='heading heading--dark'>Support Staff</h2>
+					<h2 className='heading heading--dark'>Support</h2>
 					<div className='teamPage__players--cards'>
 						<PlayerCard
-							Position={"Manager"}
+							Position={"Substitute"}
 							Alias={"rEqN_"}
 							Name={"Some Name"}
 							x_link={"https://x.com/xmplfy"}
