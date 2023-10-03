@@ -58,15 +58,6 @@ function PrivatePolicy() {
 						Personal Information, please contact us at the address
 						above to request deletion.
 					</p>
-					<h3 className="grey">MINORS</h3>
-					<p className="grey">
-						The Site is not intended for individuals under the age
-						of 13. We do not intentionally collect Personal
-						Information from children. If you are the parent or
-						guardian and believe your child has provided us with
-						Personal Information, please contact us at the address
-						above to request deletion.
-					</p>
 
 					<h3 className="grey">BEHAVIORAL ADVERTISING</h3>
 					<p className="grey">
