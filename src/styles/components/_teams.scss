@@ -66,6 +66,17 @@
 	.teamPage__cover {
 		background-image: url("../../assets/img/cod-backing.jpeg");
 	}
+
+	.teamPage__content {
+		.teamPage__content--team {
+			display: flex;
+			img {
+				filter: brightness(0) invert(1);
+				width: 10%;
+				height: auto;
+			}
+		}
+	}
 }
 
 .fifa {

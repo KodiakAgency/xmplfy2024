@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import PlayerCard from "../../components/PlayerCard";
-import codChar from "../../assets/img/Team_CS_wht_80x80.svg";
+import codChar from "../../assets/img/call-of-duty.png";
 
 const cod = () => {
 	return (
@@ -13,7 +13,7 @@ const cod = () => {
 					<div className='teamPage__content'>
 						<h2>Call of Duty</h2>
 						<div className='teamPage__content--team'>
-							<Image src={codChar} alt='' />
+							<Image src={codChar} alt='' className='white' />
 							<p>
 								Culpa cillum consectetur incididunt pariatur do
 								nisi. Qui aliqua aliqua mollit exercitation
