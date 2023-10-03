@@ -7,4 +7,33 @@
 		width: 80%;
 		margin: auto;
 	}
+
+	&__grid {
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+
+.partner {
+	max-width: 200px;
+	width: 200px;
+	border: 1px solid #2a2a2a;
+	// border-radius: 12px;
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 50%;
+		margin: auto;
+		height: auto;
+		text-align: center;
+	}
+}
+
+.partner.active {
+	border: 1px solid $xmplfy-blue;
 }
