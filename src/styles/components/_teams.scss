@@ -83,6 +83,18 @@
 	.teamPage__cover {
 		background-image: url("../../assets/img/fifa.jpg");
 	}
+
+	.teamPage__body {
+		.teamPage__content {
+			.teamPage__content--team {
+				display: flex;
+				img {
+					width: 10%;
+					height: auto;
+				}
+			}
+		}
+	}
 }
 
 .rl {

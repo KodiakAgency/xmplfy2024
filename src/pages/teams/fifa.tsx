@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Image from "next/image";
 import PlayerCard from "../../components/PlayerCard";
-import fifaChar from "../../assets/img/Team_CS_wht_80x80.svg";
+import fifaChar from "../../assets/img/ea-sports-fc-logo.png";
 
 const fifa = () => {
 	return (
@@ -11,7 +11,7 @@ const fifa = () => {
 				<div className='teamPage__cover'></div>
 				<div className='teamPage__body'>
 					<div className='teamPage__content'>
-						<h2>Fifa</h2>
+						<h2>EA Sports FC24</h2>
 						<div className='teamPage__content--team'>
 							<Image src={fifaChar} alt='' />
 							<p>

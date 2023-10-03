@@ -10,10 +10,10 @@
 	&__container {
 		max-height: 16vh;
 		display: flex;
-		width: 80%;
+		width: 80% !important;
 		margin: auto;
 		align-items: center;
-		gap: 50vw;
+		justify-content: space-between;
 	}
 
 	&__branding {
@@ -21,7 +21,7 @@
 		justify-content: flex-start;
 		align-items: center;
 		padding: 1rem 0;
-
+		width: 20%;
 		img {
 			width: 35% !important;
 			margin-right: 1em;
@@ -29,14 +29,20 @@
 		}
 	}
 	&__info {
-		width: 30vw;
+		width: 80%;
 		ul {
 			display: flex;
-			justify-content: space-around;
+			justify-content: flex-end;
 			align-items: center;
+			width: 100%;
+			padding: 0;
 		}
 		li {
 			list-style: none;
+			margin-right: 1em;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 
