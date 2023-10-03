@@ -33,7 +33,7 @@ const csgo = () => {
 					<div className='teamPage__players--cards'>
 						<PlayerCard
 							Position={"Rifler"}
-							Alias={"Darke9000"}
+							Alias={"Darke9k"}
 							Name={"Austin Turner"}
 							x_link={"https://x.com/darke9k"}
 							stream_link={"https://twitch.tv/darke9k"}

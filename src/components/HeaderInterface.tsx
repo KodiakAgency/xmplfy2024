@@ -25,20 +25,6 @@ const HeaderInterface = () => {
 				<div className='interface__right'>
 					<div className='interface__pages flex justify-space-around'>
 						<ul className='linkGroup flex justify-space-around'>
-							{/* <li>
-								<Link
-									className="links text-color-light"
-									href={"/about"}>
-									ABOUT
-								</Link>
-							</li> */}
-							{/* <li>
-								<Link
-									className="links text-color-light"
-									href={"/schedule"}>
-									SCHEDULE
-								</Link>
-							</li> */}
 							<li>
 								<span
 									className={`links text-color-light ${
@@ -103,14 +89,14 @@ const HeaderInterface = () => {
 									PARTNERS
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link
 									className='links text-color-light'
 									href={"/"}
 									target='_blank'>
 									STORE
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<a
 									className='links text-color-light'
