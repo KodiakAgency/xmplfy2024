@@ -1,0 +1,10 @@
+.partnerPage {
+	background: #fff;
+	min-height: 85vh;
+	&__body {
+		padding-top: $gutter-x;
+		max-width: 80%;
+		width: 80%;
+		margin: auto;
+	}
+}

@@ -103,14 +103,14 @@ const HeaderInterface = () => {
 									PARTNERS
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link
 									className='links text-color-light'
 									href={"/"}
 									target='_blank'>
 									STORE
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<a
 									className='links text-color-light'

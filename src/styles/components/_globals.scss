@@ -149,6 +149,8 @@ html {
 
 .heading {
 	font-size: $heading-size;
+	margin: 0;
+	padding: 0;
 	&--dark {
 		color: #2a2a2a;
 	}
