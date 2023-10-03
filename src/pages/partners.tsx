@@ -6,7 +6,9 @@ const partners = () => {
 		<Layout>
 			<div className='partnerPage'>
 				<div className='partnerPage__body'>
-					<h2 className='heading heading--dark'>Partners</h2>
+					<h2 className='heading uppercase'>
+						Our <span className='blue'>Partners</span>
+					</h2>
 				</div>
 			</div>
 		</Layout>
