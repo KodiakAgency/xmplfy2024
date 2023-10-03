@@ -53,7 +53,9 @@ const HeaderInterface = () => {
 												<li>
 													<Link
 														className='links text-color-light'
-														href={"/teams/cod"}>
+														href={
+															"/teams/call-of-duty"
+														}>
 														Call of Duty
 													</Link>
 												</li>
