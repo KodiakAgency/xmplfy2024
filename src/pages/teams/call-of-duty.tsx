@@ -34,7 +34,7 @@ const cod = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"RicheeUS"}
-							Name={"Richard Last"}
+							Name={"Braden Richee"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
@@ -42,7 +42,7 @@ const cod = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"Essence"}
-							Name={"Jacob Last"}
+							Name={"Jacob Stephens"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
@@ -58,7 +58,7 @@ const cod = () => {
 						<PlayerCard
 							Position={""}
 							Alias={"Perish"}
-							Name={"AJ Last"}
+							Name={"AJ Harris"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
