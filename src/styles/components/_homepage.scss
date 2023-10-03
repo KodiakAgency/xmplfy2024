@@ -112,16 +112,19 @@
 				opacity: 1;
 			}
 			.button {
-				margin: auto;
 				display: flex;
-				gap: 1vw;
-				justify-content: center;
+				height: 10px;
+				width: 100%;
+				justify-content: space-between;
 				align-items: center;
 				font-size: 18px;
+				margin: auto;
 			}
 
 			.material-symbols-outlined {
-				vertical-align: middle;
+				height: 10px;
+				display: flex;
+				justify-content: center;
 				align-items: center;
 			}
 		}

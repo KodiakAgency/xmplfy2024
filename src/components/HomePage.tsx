@@ -48,7 +48,10 @@ function Home() {
 										hope you enjoy every bit of them as we
 										do!
 									</p>
-									<Link href="#" className="button">
+									<Link
+										href="/teams/counter-strike"
+										className="button">
+										Visit Team!
 										<span className="material-symbols-outlined">
 											<BsArrowRight></BsArrowRight>
 										</span>
@@ -71,7 +74,11 @@ function Home() {
 										North American Rocket League players who
 										can only go up.
 									</p>
-									<a href="#" className="button">
+									<a
+										href="teams/rocket-league"
+										className="button">
+										{" "}
+										Visit Team!
 										<span className="material-symbols-outlined">
 											<BsArrowRight></BsArrowRight>
 										</span>
@@ -92,7 +99,8 @@ function Home() {
 										mechanics as our Fifa player! Check out
 										highlights and much more from Bortap!
 									</p>
-									<a href="#" className="button">
+									<a href="/teams/fifa" className="button">
+										Visit Team!
 										<span className="material-symbols-outlined">
 											<BsArrowRight></BsArrowRight>
 										</span>
@@ -113,7 +121,8 @@ function Home() {
 										keeping Call Of Duty in our program and
 										seeing how far this esport can go!
 									</p>
-									<a href="#" className="button">
+									<a href="/teams/cod" className="button">
+										Visit Team!
 										<span className="material-symbols-outlined">
 											<BsArrowRight></BsArrowRight>
 										</span>
