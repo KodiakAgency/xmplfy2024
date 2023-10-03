@@ -122,11 +122,9 @@ function Home() {
 											our program and seeing how far this
 											esport can go!
 										</p>
-										<a href="#" className="button">
-											<span className="material-symbols-outlined">
-												<BsArrowRight></BsArrowRight>
-											</span>
-										</a>
+										<span className="material-symbols-outlined">
+											<BsArrowRight></BsArrowRight>
+										</span>
 									</div>
 								</div>
 							</Link>
