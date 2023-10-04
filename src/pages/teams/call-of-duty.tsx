@@ -49,16 +49,16 @@ const cod = () => {
 						/>
 						<PlayerCard
 							Position={""}
-							Alias={"Oni"}
-							Name={"Chandler Knapp"}
+							Alias={"AJX"}
+							Name={"AJ Harris"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
 							Position={""}
-							Alias={"Perish"}
-							Name={"AJ Harris"}
+							Alias={"Oni"}
+							Name={"Chandler Knapp"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
