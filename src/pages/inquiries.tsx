@@ -1,7 +1,12 @@
 import Layout from "../components/Layout";
 
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
+// function colorChange() {
+// 	const [color, setColor] = useState("initialColor"); // Set an initial color value
+// 	// Your component logic here
+// 	// 0x007bff
+// }
 class inquiries extends Component {
 	constructor(props) {
 		super(props);
@@ -21,8 +26,21 @@ class inquiries extends Component {
 			alert("Please enter a message.");
 			return;
 		}
+		let color = "";
 
 		try {
+			if (this.state.subject === "Careers") {
+				color = 5763719; //  green
+			} else if (this.state.subject === "Partnerships") {
+				color = 15844367; // gold
+			} else if (this.state.subject === "Become A Player") {
+				color = 15105570; // orange
+			} else if (this.state.subject === "Become A Content Creator") {
+				color = 10181046; // purple
+			} else if (this.state.subject === "Other") {
+				color = 3447003; // blue
+			}
+			console.log(color);
 			const response = await fetch(this.webhookUrl, {
 				method: "POST",
 				headers: {
@@ -30,13 +48,14 @@ class inquiries extends Component {
 				},
 				body: JSON.stringify({
 					username: this.state.email || "Anonymous", // Use the email as the sender's name, or 'Anonymous' if no email provided
+					content: "@here",
 					embeds: [
 						{
 							title: `Subject: ${this.state.subject}\nEmail:  ${
 								this.state.email || "N/A"
 							}`,
-							description: this.state.message,
-							color: 0x007bff, // Change to your desired embed color (hex)
+							description: `${this.state.message}\n`,
+							color: color, // Change to your desired embed color (hex)
 						},
 					],
 				}),
@@ -47,6 +66,7 @@ class inquiries extends Component {
 					subject: "General Inquiry",
 					message: "",
 					email: "",
+					color: "0x007bff",
 				});
 			} else {
 				console.error("Failed to send message to Discord.");
