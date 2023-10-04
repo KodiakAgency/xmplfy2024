@@ -34,6 +34,13 @@
 	}
 }
 
+.partnerPage__bio {
+	// put 60 and flex add img to side?
+	display: flex;
+	font-size: 18px;
+	width: 60%;
+}
+
 .partner.active {
 	border: 1px solid $xmplfy-blue;
 }
