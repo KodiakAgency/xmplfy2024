@@ -57,7 +57,7 @@ const partners = () => {
 							</p>
 						) : active === "kodiak" ? (
 							<p>
-								he savior of merchants from outdated design and
+								The savior of merchants from outdated design and
 								obsolute solutions We help breakout brands
 								unlock their highest growth potential by
 								designing and developing future-proof eCommerce
