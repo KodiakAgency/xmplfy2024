@@ -26,7 +26,7 @@
 	flex-direction: column;
 	height: 100%;
 
-	.flex {
+	.setting {
 		max-width: 40%;
 		display: flex;
 		justify-content: space-between;
@@ -189,4 +189,42 @@
 
 .block {
 	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	.inquiries_container {
+		min-height: auto;
+		padding: 20px; /* Add some padding for spacing */
+	}
+
+	.inquiries {
+		width: 100%;
+		flex-direction: column; /* Stack content vertically */
+	}
+
+	.teamPage__body {
+		font-size: 14px;
+	}
+
+	.subject,
+	.email,
+	.message {
+		width: 100%;
+		max-width: 100%; /* Make inputs and textarea full width */
+	}
+
+	.submitmsg {
+		max-width: 100%;
+		text-align: center; /* Center the button */
+	}
+
+	.setting {
+		max-width: 100% !important;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: c;
+	}
+
+	/* You can add more specific styles for smaller screens here */
 }

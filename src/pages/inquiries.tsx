@@ -86,7 +86,7 @@ class inquiries extends Component {
 						</div>
 						<div className="form">
 							<form onSubmit={this.handleSubmit}>
-								<div className="flex">
+								<div className="setting">
 									<div className="subject">
 										<label
 											htmlFor="subject"
