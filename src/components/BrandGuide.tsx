@@ -84,7 +84,7 @@ function BrandGuide() {
 							</div>
 						</div>
 						<div className="color_items_black">
-							<div className="codes">
+							<div className="codes__white">
 								<span>Hex: #000000</span>
 								<span>RGB: 0 0 0</span>
 								<span>CMYK: 75 68 67 90</span>

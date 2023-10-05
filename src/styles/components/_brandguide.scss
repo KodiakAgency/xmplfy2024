@@ -5,9 +5,10 @@
 }
 .brand_container {
 	background: rgb(14, 13, 13);
-	height: calc(100vh - 16vh);
+	height: auto;
+	min-height: 100vh;
 	display: flex;
-	width: 100%;
+	min-width: 95%;
 	margin: auto;
 	line-height: 4px;
 
@@ -37,18 +38,20 @@
 	}
 
 	.logo {
-		height: 15vh;
+		height: auto;
 		padding-top: 1vh;
 		&_text {
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: 700;
 		}
 
 		.branding {
+			height: auto;
 			cursor: auto;
 			padding-top: 1vh;
 			line-height: normal;
 			color: #919191;
+			padding-bottom: 1vh;
 		}
 	}
 
@@ -56,12 +59,15 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-basis: 2/3;
-		height: 20vh;
-		width: 100%;
+		min-height: 18vh;
+		height: auto;
+		min-width: 90%;
 		gap: 2vh;
 	}
 
 	.logo_download {
+		padding-top: 1vh;
+		height: auto;
 		.links {
 			font-size: $font-size;
 			font-weight: 400;
@@ -75,8 +81,6 @@
 		width: 49%;
 		align-items: center;
 		justify-content: center;
-		height: 8vh;
-
 		border-radius: 6px;
 
 		&_white {
@@ -130,7 +134,7 @@
 				height: 320px;
 				background-color: #000000;
 				border-radius: 6px;
-				.codes {
+				.codes__white {
 					display: flex;
 					flex-direction: column;
 					gap: 2vh;
@@ -152,7 +156,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 16px;
 
 		.logoStyle {
 			width: 20%;
@@ -163,7 +166,7 @@
 		}
 
 		.guideline {
-			width: 100%;
+			width: 90%;
 			padding-top: 2vh;
 		}
 
@@ -196,6 +199,7 @@
 		}
 
 		.logo_items {
+			margin-top: 22%;
 			flex-direction: column;
 			gap: 16px;
 			height: auto;
@@ -208,7 +212,7 @@
 
 		.item,
 		.item_white {
-			width: 100%;
+			width: 90%;
 			height: auto;
 			margin-bottom: 16px;
 
@@ -226,26 +230,37 @@
 			}
 
 			&_items {
-				padding-top: 2vh;
-				justify-content: space-between;
+				display: flex;
+				flex-direction: column;
 
 				&_white,
 				&_blue,
 				&_black {
 					width: 100%;
-					max-width: 400px;
+					max-width: 300px;
+					min-height: 250px;
 					height: auto;
 					margin-bottom: 16px;
 					border-radius: 6px;
 
 					.codes {
+						height: auto;
 						display: flex;
 						flex-direction: column;
 						gap: 16px;
 						width: 80%;
-						height: 80%;
 						margin: 50% auto auto auto;
 						color: black;
+
+						&__white {
+							height: auto;
+							display: flex;
+							flex-direction: column;
+							gap: 16px;
+							width: 80%;
+							margin: 50% auto auto auto;
+							color: white;
+						}
 					}
 				}
 			}
