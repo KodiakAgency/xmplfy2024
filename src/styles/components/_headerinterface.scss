@@ -93,3 +93,50 @@
 		}
 	}
 }
+
+/* Add this CSS to your existing styles or a separate CSS file */
+/* ... Your existing styles ... */
+
+.mobile-menu-icon {
+	display: none; /* Initially hide the hamburger menu icon */
+	/* Add styles for the hamburger icon */
+}
+
+@media (max-width: 768px) {
+	/* Media query for mobile devices (adjust breakpoint as needed) */
+	.mobile-menu-icon {
+		display: block; /* Display the hamburger menu icon on mobile devices */
+		cursor: pointer;
+		color: #000;
+	}
+
+	/* Media query for mobile devices (adjust breakpoint as needed) */
+	.interface__pages {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		border-top: 3px solid #0099ff;
+		z-index: 999;
+		background-color: #eef4f7;
+		min-height: 25vh;
+		border-bottom: 3px solid #0099ff;
+	}
+
+	.linkGroup {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.none {
+		display: none; /* Initially hide the mobile menu */
+	}
+	/* Show the mobile menu when isMobileMenuOpen is true */
+	.mobile-menu-open .interface__pages {
+		display: block; /* Show the mobile menu */
+	}
+
+	body.mobile-menu-open {
+		overflow: hidden;
+	}
+}
