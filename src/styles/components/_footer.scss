@@ -55,13 +55,14 @@
 	.footer {
 		display: flex;
 		height: auto !important; /* Adjust max-height for phones */
-		min-height: 26vh; /* Adjust height for phones */
+		min-height: 26vh !important; /* Adjust height for phones */
 		background: $cream;
 
 		&__container {
 			display: flex;
 			flex-direction: column; /* Stack content vertically */
-			width: 100%;
+			width: 100% !important;
+			margin: unset;
 		}
 
 		&__branding {
@@ -77,9 +78,10 @@
 		&__info {
 			height: auto; /* Adjust height for phones */
 			ul {
+				display: flex;
 				flex-direction: column; /* Stack content vertically */
-				margin: 0;
 				gap: 1vh;
+				margin: 0;
 			}
 
 			li {
