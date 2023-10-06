@@ -44,3 +44,26 @@
 .partner.active {
 	border: 1px solid $xmplfy-blue;
 }
+
+@media screen and (max-width: 768px) {
+	.partnerPage {
+		min-height: 100vh; /* Adjust as needed */
+		&__body {
+			width: 100%;
+		}
+		&__grid {
+			flex-direction: column; /* Stack .partner elements vertically */
+			gap: 0.5rem; /* Reduce gap between .partner elements */
+		}
+	}
+
+	.partner {
+		max-width: 100%; /* Allow .partner to take full width */
+		width: 100%;
+	}
+
+	.partnerPage__bio {
+		width: 100%; /* Allow .partnerPage__bio to take full width */
+		font-size: 16px; /* Adjust font size for phones */
+	}
+}
