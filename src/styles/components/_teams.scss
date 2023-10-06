@@ -114,3 +114,39 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.teamPage {
+		&__body {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			padding: $gutter-x; /* Add padding to the body for spacing */
+			border-radius: 6px; /* Remove border-radius */
+			background-position: center; /* Center background image */
+			text-align: center;
+		}
+
+		h2 {
+			font-size: $heading-size; /* Adjust font size for phones */
+		}
+
+		&__content--team {
+			display: flex;
+			flex-direction: column; /* Stack content vertically */
+			gap: 2rem; /* Reduce gap between elements */
+		}
+		&__players,
+		.teamPage__players--cards {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: $gutter-x; /* Adjust top margin */
+
+			.playerCard {
+				margin-right: 0;
+			}
+		}
+	}
+}
