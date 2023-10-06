@@ -4,8 +4,8 @@
 	// margin-top: 4rem;
 	display: flex;
 	background: $cream;
-	max-height: 10vh;
-	height: 16vh;
+	max-height: auto;
+	min-height: 16vh;
 
 	&__container {
 		max-height: 16vh;
@@ -49,5 +49,43 @@
 	.links {
 		color: #171718;
 		font-size: $font-size;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		display: flex;
+		height: auto !important; /* Adjust max-height for phones */
+		min-height: 26vh; /* Adjust height for phones */
+		background: $cream;
+
+		&__container {
+			display: flex;
+			flex-direction: column; /* Stack content vertically */
+			width: 100%;
+		}
+
+		&__branding {
+			display: flex;
+			justify-content: center;
+			img {
+				width: 45px !important;
+				height: auto;
+				margin: 0;
+			}
+		}
+
+		&__info {
+			height: auto; /* Adjust height for phones */
+			ul {
+				flex-direction: column; /* Stack content vertically */
+				margin: 0;
+				gap: 1vh;
+			}
+
+			li {
+				margin: 0;
+			}
+		}
 	}
 }
