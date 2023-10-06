@@ -130,3 +130,33 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.welcome_container {
+		padding: 0; /* Remove bottom padding for mobile */
+	}
+
+	.welcome_container .titlepage h2 {
+		font-size: 40px; /* Adjust font size for mobile */
+		line-height: 1.2; /* Increase line height for readability on mobile */
+	}
+
+	.welcome_container .titlepage .welcome {
+		flex-direction: column; /* Stack items vertically on mobile */
+		align-items: center; /* Center items on mobile */
+		padding: 2vh 0; /* Adjust top and bottom padding for mobile */
+	}
+
+	.welcome_container .titlepage .welcome p {
+		text-align: center; /* Center-align text on mobile */
+	}
+
+	.welcome_container .game_cards {
+		flex-direction: column; /* Stack cards in a single column on mobile */
+		gap: 1rem; /* Add space between cards on mobile */
+	}
+
+	.welcome_container .game_cards .card {
+		margin-bottom: 1rem; /* Reduce space between cards on mobile */
+	}
+}
