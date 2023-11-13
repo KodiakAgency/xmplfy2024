@@ -1,5 +1,14 @@
 @import "./utils/variables";
 
+.xmplfy_slogan {
+	h2 {
+		text-transform: uppercase;
+		font-size: 80px;
+		font-weight: 900;
+		line-height: 70px;
+	}
+}
+
 .welcome_container {
 	width: 100%;
 	height: max(90vh, auto);
@@ -10,12 +19,6 @@
 		justify-items: center;
 		padding: 0;
 		text-align: center;
-		h2 {
-			text-transform: uppercase;
-			font-size: 80px;
-			font-weight: 900;
-			line-height: 70px;
-		}
 
 		.welcome {
 			width: 100%;
@@ -39,105 +42,173 @@
 			}
 		}
 	}
+}
 
-	.game_cards {
+.gameCards {
+	display: flex;
+	gap: 2vw;
+	justify-content: center;
+	max-width: 90%;
+	margin: auto;
+	height: 100%;
+	&__item {
+		width: 22vw;
+		height: 70vh;
+		border-radius: 10px;
+		overflow: hidden;
+		cursor: pointer;
+		color: #fff;
+		box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+	}
+	&__spacer {
+		height: 40%;
+	}
+	&__content {
+		height: 100%;
+		width: 90%;
+		margin: auto;
 		display: flex;
-		gap: 2vw;
+		flex-direction: column;
+		&:hover .gameCards__desc {
+			opacity: 1;
+		}
+		&:hover .gameCards__title {
+			transform: translateY(0vh);
+		}
+	}
+
+	&__title {
+		// inset: auto auto 30px 30px;
+		height: 40%;
+		margin: 0;
+		// transition: inset 0.3s 0.3s ease-out;
+		font-weight: 800;
+		font-size: 20px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: flex-end;
+		transform: translateY(30vh);
+		transition: transform 0.3s ease-out;
+	}
+
+	&__desc {
+		height: 50%;
+		max-width: 80%;
+		transition: opacity 0.8s ease-in-out;
+		display: flex;
+		text-align: left;
+		inset: auto auto 80px 30px;
+		font-size: 14px;
+		opacity: 0;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.button {
+		display: flex;
+		height: 10px;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 18px;
+		margin: auto;
+	}
+
+	.material-symbols-outlined {
+		height: 10px;
+		display: flex;
 		justify-content: center;
-		.card {
-			width: 24rem;
-			height: 36rem;
-			border-radius: 10px;
-			overflow: hidden;
-			cursor: pointer;
-			position: relative;
-			color: #fff;
-			box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+		align-items: center;
+	}
+}
 
-			.gamesimg {
-				position: absolute;
-				object-fit: cover;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				opacity: 0.9;
-				transition: opacity 0.2s ease-out;
-			}
+.gameCards__cs2 {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.95)
+		),
+		url("../../assets/img/cs2.jpg");
+	background-position: initial;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	filter: grayscale(0.5);
+}
 
-			.gamesh2 {
-				position: absolute;
-				inset: auto auto 30px 30px;
-				margin: 0;
-				transition: inset 0.3s 0.3s ease-out;
-				font-weight: 800;
-				font-size: 20px;
-				text-transform: uppercase;
-			}
+.gameCards__rl {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.95)
+		),
+		url("../../assets/img/rocketleaguebacking.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 70vh;
+	filter: grayscale(0.5);
+}
 
-			.gamesP,
-			a {
-				position: absolute;
-				opacity: 0;
-				max-width: 80%;
-				transition: opacity 0.3s ease-out;
-			}
+.gameCards__cod {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.95)
+		),
+		url("../../assets/img/cod-backing.jpeg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 70vh;
+	filter: grayscale(0.5);
+}
 
-			.gamesP {
-				display: flex;
-				text-align: left;
-				inset: auto auto 80px 30px;
-				font-size: 14px;
-			}
+.gameCards__fifa {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.95)
+		),
+		url("../../assets/img/fifa.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 70vh;
+	filter: grayscale(0.5);
+}
 
-			a {
-				inset: auto auto 40px 30px;
-				color: inherit;
-				text-decoration: none;
-			}
+.show {
+	filter: grayscale(0);
+}
 
-			&:hover h2 {
-				inset: auto auto 220px 30px;
-				transition: inset 0.3s ease-out;
-			}
+.about_container {
+	margin-top: -10vh;
+	padding-top: 5vh;
+}
 
-			&:hover p,
-			&:hover a {
-				opacity: 1;
-				transition: opacity 0.5s 0.1s ease-in;
-			}
-
-			&:hover img {
-				transition: opacity 0.3s ease-in;
-				opacity: 1;
-			}
-			.button {
-				display: flex;
-				height: 10px;
-				width: 100%;
-				justify-content: space-between;
-				align-items: center;
-				font-size: 18px;
-				margin: auto;
-			}
-
-			.material-symbols-outlined {
-				height: 10px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
+@media screen and (max-width: 900px) {
+	.gameCards {
+		&__item {
+			width: 90vw;
+			height: 60vh;
+		}
+		&__title {
+			font-size: 24px;
+			transform: translateY(0);
+		}
+		&__desc {
+			opacity: 1;
 		}
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 	.welcome_container {
 		padding: 0; /* Remove bottom padding for mobile */
 	}
 
-	.welcome_container .titlepage h2 {
-		font-size: 40px; /* Adjust font size for mobile */
+	.welcome_container .xmplfy_slogan h2 {
+		font-size: 36px; /* Adjust font size for mobile */
 		line-height: 1.2; /* Increase line height for readability on mobile */
 	}
 
@@ -151,12 +222,12 @@
 		text-align: center; /* Center-align text on mobile */
 	}
 
-	.welcome_container .game_cards {
+	.welcome_container .gameCards {
 		flex-direction: column; /* Stack cards in a single column on mobile */
 		gap: 1rem; /* Add space between cards on mobile */
 	}
 
-	.welcome_container .game_cards .card {
+	.welcome_container .gameCards .gameCards__item {
 		margin-bottom: 1rem; /* Reduce space between cards on mobile */
 	}
 }

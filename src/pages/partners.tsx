@@ -9,13 +9,13 @@ const partners = () => {
 
 	return (
 		<Layout>
-			<div className="partnerPage">
-				<div className="partnerPage__body">
-					<h2 className="heading uppercase">
-						Our <span className="blue">Partners</span>
+			<div className='partnerPage'>
+				<div className='partnerPage__body'>
+					<h2 className='heading uppercase'>
+						Our <span className='blue'>Partners</span>
 					</h2>
 
-					<div className="partnerPage__grid">
+					<div className='partnerPage__grid'>
 						<div
 							className={
 								active === "kodiak"
@@ -25,7 +25,7 @@ const partners = () => {
 							onClick={() => {
 								setActive("kodiak");
 							}}>
-							<Image src={KodiakLogo} alt="" />
+							<Image src={KodiakLogo} alt='' />
 						</div>
 						<div
 							className={
@@ -36,11 +36,11 @@ const partners = () => {
 							onClick={() => {
 								setActive("rogue");
 							}}>
-							<Image src={RogueEnergy} alt="" />
+							<Image src={RogueEnergy} alt='' />
 						</div>
 					</div>
 
-					<div className="partnerPage__bio">
+					<div className='partnerPage__bio'>
 						{active === "rogue" ? (
 							<p>
 								Rogue is a gaming company at heart. We strive to
@@ -70,11 +70,12 @@ const partners = () => {
 								solution that is built to scale.
 								<br></br>
 								<br></br>
-								Kodiak Agencyus an UI/UX design and
+								Kodiak Agency is an UI/UX design and
 								implementation agency that creates effective
-								eCommerce experiences. With design at our core,
-								Kodiak Agency was born when using templates
-								became the normality instead of the exception.
+								eCommerce experiences. With design at their
+								core, Kodiak Agency was born when using
+								templates became the normality instead of the
+								exception.
 								<br></br>
 								<br></br>
 								Our suite of custom eCommerce design and

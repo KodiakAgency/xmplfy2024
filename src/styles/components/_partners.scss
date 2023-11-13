@@ -1,6 +1,7 @@
 .partnerPage {
 	// background: #fff;
 	min-height: 85vh;
+	padding-bottom: 2rem;
 	&__body {
 		padding-top: $gutter-x;
 		max-width: 80%;
@@ -45,7 +46,7 @@
 	border: 1px solid $xmplfy-blue;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 	.partnerPage {
 		min-height: 100vh; /* Adjust as needed */
 		&__body {

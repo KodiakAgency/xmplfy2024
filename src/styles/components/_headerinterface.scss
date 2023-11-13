@@ -6,6 +6,30 @@
 	border-bottom: 3px solid $xmplfy-blue;
 	position: relative;
 
+	&__desktopNav {
+	}
+
+	&__mobileNav {
+		height: 100%;
+		align-items: center;
+		padding-left: 0;
+		display: none;
+		li {
+			flex-direction: column;
+			width: 100%;
+			height: unset !important;
+			margin: 1rem 0;
+			border-bottom: 1px solid #c3c3c3;
+			padding-bottom: 1em;
+			span {
+				display: unset !important;
+			}
+		}
+		&__link {
+			height: max-content;
+		}
+	}
+
 	.container {
 		width: 80%;
 	}
@@ -94,6 +118,30 @@
 	}
 }
 
+.mobileNav {
+	&__link {
+		text-transform: uppercase;
+	}
+	&__teams {
+		height: max-content;
+		ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			li {
+				margin-bottom: 1rem;
+				a {
+					margin: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+.mobile-menu-open {
+	height: calc(100vh - 80px) !important;
+}
 /* Add this CSS to your existing styles or a separate CSS file */
 /* ... Your existing styles ... */
 
@@ -102,7 +150,7 @@
 	/* Add styles for the hamburger icon */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 	/* Media query for mobile devices (adjust breakpoint as needed) */
 	.mobile-menu-icon {
 		display: block; /* Display the hamburger menu icon on mobile devices */
@@ -121,6 +169,15 @@
 		background-color: #eef4f7;
 		min-height: 25vh;
 		border-bottom: 3px solid #0099ff;
+		height: max-content;
+	}
+
+	.interface__desktopNav {
+		display: none !important;
+	}
+
+	.interface__mobileNav {
+		display: unset;
 	}
 
 	.linkGroup {
@@ -129,7 +186,7 @@
 	}
 
 	.none {
-		display: none; /* Initially hide the mobile menu */
+		display: none !important; /* Initially hide the mobile menu */
 	}
 	/* Show the mobile menu when isMobileMenuOpen is true */
 	.mobile-menu-open .interface__pages {
@@ -138,5 +195,25 @@
 
 	body.mobile-menu-open {
 		overflow: hidden;
+	}
+
+	.mobileNav__link {
+		margin-right: 2em;
+		color: #171718;
+		text-decoration: none;
+
+		.teams_shown {
+			display: none;
+		}
+
+		svg {
+			font-size: $font-size;
+			vertical-align: middle;
+			padding-left: 0.5em;
+		}
+		&:hover {
+			color: $xmplfy-blue;
+			font-weight: 600;
+		}
 	}
 }

@@ -8,125 +8,62 @@ import fifa from "../assets/img/fifa.jpg";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
+import GameCards from "./GameCards";
 
 function Home() {
+	let cs2_description = `Counter-Strike, our team consisting of some of the best North American up and coming players. Hoozh, Jynx, nrb, Girthquake, Darke. These players have been with us for multiple seasons and we hope you enjoy every bit of them as we do!`;
+	let rl_description = `Rocket League, our team consist of college atheletes and teammates that have been together for very long. Roupus, Zekers, and Asuna are fantastic North American Rocket League players who can only go up.`;
+	let cod_description = `Call Of Duty, an esport that has been here for a long time. We look forward to keeping Call Of Duty in our program and seeing how far this esport can go!`;
+	let fifa_description = `Fifa, soccer or football? It's soccer, and Bortap demonstrates the best mechanics as our Fifa player! Check out highlights and much more from Bortap!`;
+
 	return (
 		<>
-			<div className="img-background">
-				<div className="welcome_container">
-					<div className="titlepage">
-						<div className="welcome">
+			<div className='img-background'>
+				<div className='welcome_container'>
+					<div className='titlepage'>
+						<div className='welcome'>
 							<p>Welcome to</p>
-							<Image src={logo} alt="xmplfy logo"></Image>{" "}
+							<Image src={logo} alt='xmplfy logo'></Image>{" "}
 							<Image
 								src={xmplfyWordmark}
-								alt="Xmplfy"
-								className="newwordmark"
+								alt='Xmplfy'
+								className='newwordmark'
 							/>
 						</div>
-						<div className="xmplfy_slogan">
-							<h2 className="bold">
+						<div className='xmplfy_slogan'>
+							<h2 className='bold'>
 								North America's
 								<br /> Rising Stars
 							</h2>
 						</div>
-						<div className="game_cards flex container">
+						<div className='gameCards flex container'>
 							<Link href={"/teams/counter-strike"}>
-								<div className="card">
-									<Image
-										src={cs2}
-										alt="cs"
-										className="gamesimg"
-									/>
-									<div className="card-content">
-										<h2 className="gamesh2">
-											Counter-Strike
-										</h2>
-										<p className="gamesP">
-											Counter-Stike, our team consisting
-											of some of the best North American
-											up and coming players. Hoozh, Jynx,
-											nrb, Girthquake, Darke. These
-											players have been with us for
-											multiple seasons and we hope you
-											enjoy every bit of them as we do!
-										</p>
-										<span className="material-symbols-outlined">
-											<BsArrowRight></BsArrowRight>
-										</span>
-									</div>
-								</div>
+								<GameCards
+									game={"cs2"}
+									title={"Counter-Strike"}
+									description={cs2_description}
+								/>
 							</Link>
 							<Link href={"/teams/rocket-league"}>
-								<div className="card">
-									<Image
-										src={rocketleague}
-										alt="rocket league"
-										className="gamesimg"
-									/>
-									<div className="card-content">
-										<h2 className="gamesh2">
-											Rocket League
-										</h2>
-										<p className="gamesP">
-											Rocket League, our team consist of
-											college atheletes and teammates that
-											have been together for very long.
-											Roupus, Zekers, and Asuna are
-											fantastic North American Rocket
-											League players who can only go up.
-										</p>
-										<span className="material-symbols-outlined">
-											<BsArrowRight></BsArrowRight>
-										</span>
-									</div>
-								</div>
+								<GameCards
+									game={"rl"}
+									title={"Rocket League"}
+									description={rl_description}
+								/>
 							</Link>
 							<Link href={"/teams/fifa"}>
-								<div className="card">
-									<Image
-										src={fifa}
-										alt="fifa"
-										className="gamesimg"
-									/>
-									<div className="card-content">
-										<h2 className="gamesh2">Fifa</h2>
-										<p className="gamesP">
-											Fifa, soccer or football? It's
-											soccer, and Bortap demonstrates the
-											best mechanics as our Fifa player!
-											Check out highlights and much more
-											from Bortap!
-										</p>
-										<span className="material-symbols-outlined">
-											<BsArrowRight></BsArrowRight>
-										</span>
-									</div>
-								</div>
+								<GameCards
+									game={"fifa"}
+									title={"Fifa"}
+									description={fifa_description}
+								/>
 							</Link>
 							<Link href={"/teams/call-of-duty"}>
-								<div className="card">
-									<Image
-										src={codbacking}
-										alt="cod"
-										className="gamesimg"
-									/>
-									<div className="card-content">
-										<h2 className="gamesh2">
-											Call Of Duty
-										</h2>
-										<p className="gamesP">
-											Call Of Duty, an esport that has
-											been here for a long time. We look
-											forward to keeping Call Of Duty in
-											our program and seeing how far this
-											esport can go!
-										</p>
-										<span className="material-symbols-outlined">
-											<BsArrowRight></BsArrowRight>
-										</span>
-									</div>
-								</div>
+								<GameCards
+									game={"cod"}
+									title={"Call of Duty"}
+									description={cod_description}
+								/>
 							</Link>
 						</div>
 					</div>
