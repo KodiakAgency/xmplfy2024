@@ -7,30 +7,38 @@ import rlOctane from "../../assets/img/octane.png";
 const rocketleague = () => {
 	return (
 		<Layout>
-			<section className='teamPage rl'>
-				<div className='teamPage__cover'></div>
-				<div className='teamPage__body'>
-					<div className='teamPage__content'>
+			<section className="teamPage rl">
+				<div className="teamPage__cover"></div>
+				<div className="teamPage__body">
+					<div className="teamPage__content">
 						<h2>Rocket League</h2>
-						<div className='teamPage__content--team'>
-							<Image src={rlOctane} alt='' />
+						<div className="teamPage__content--team">
+							<Image src={rlOctane} alt="" />
 							<p>
-								Culpa cillum consectetur incididunt pariatur do
-								nisi. Qui aliqua aliqua mollit exercitation
-								voluptate cupidatat tempor culpa qui nostrud
-								excepteur proident ea dolor. Amet id incididunt
-								et deserunt sit qui dolor aliquip. Id veniam
-								voluptate commodo irure ad laborum anim
-								adipisicing Lorem. Est exercitation cillum
-								pariatur dolor enim excepteur ipsum nulla
-								occaecat excepteur consequat cupidatat in amet.
+								Rocket League esports, a captivating and
+								enduring gaming phenomenon, blends high-flying
+								car acrobatics with strategic team play. The
+								franchise's evolution into a premier esports
+								spectacle mirrors the dynamic nature of its
+								soccer-meets-rocket-cars concept. From
+								gravity-defying goals to precise teamwork,
+								Rocket League esports offers a dynamic and
+								engaging experience. Its enduring appeal lies in
+								global popularity, featuring iconic plays,
+								intense rivalries, and the rise of
+								rocket-powered sports stars. With a broad and
+								diverse audience, Rocket League esports draws
+								millions of viewers to tournaments and leagues,
+								solidifying itself as a thrilling celebration of
+								virtual vehicular mayhem, skill, and competitive
+								exhilaration.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className='teamPage__players'>
-					<h2 className='heading heading--dark'>Players</h2>
-					<div className='teamPage__players--cards'>
+				<div className="teamPage__players">
+					<h2 className="heading heading--dark">Players</h2>
+					<div className="teamPage__players--cards">
 						<PlayerCard
 							Position={""}
 							Alias={"Zekers"}

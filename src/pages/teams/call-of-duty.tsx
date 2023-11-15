@@ -7,30 +7,36 @@ import codChar from "../../assets/img/call-of-duty.png";
 const cod = () => {
 	return (
 		<Layout>
-			<section className='teamPage cod'>
-				<div className='teamPage__cover'></div>
-				<div className='teamPage__body'>
-					<div className='teamPage__content'>
+			<section className="teamPage cod">
+				<div className="teamPage__cover"></div>
+				<div className="teamPage__body">
+					<div className="teamPage__content">
 						<h2>Call of Duty</h2>
-						<div className='teamPage__content--team'>
-							<Image src={codChar} alt='' className='white' />
+						<div className="teamPage__content--team">
+							<Image src={codChar} alt="" className="white" />
 							<p>
-								Culpa cillum consectetur incididunt pariatur do
-								nisi. Qui aliqua aliqua mollit exercitation
-								voluptate cupidatat tempor culpa qui nostrud
-								excepteur proident ea dolor. Amet id incididunt
-								et deserunt sit qui dolor aliquip. Id veniam
-								voluptate commodo irure ad laborum anim
-								adipisicing Lorem. Est exercitation cillum
-								pariatur dolor enim excepteur ipsum nulla
-								occaecat excepteur consequat cupidatat in amet.
+								Call of Duty esports stands as a dynamic and
+								enduring force in the gaming realm, captivating
+								audiences with thrilling competition and
+								strategic gameplay. Evolving across multiple
+								titles, it showcases the pinnacle of virtual
+								warfare, from intense team battles to individual
+								displays of marksmanship. With a rich history
+								and iconic moments, Call of Duty esports has
+								cultivated a dedicated global fanbase. Its
+								longevity and adaptability make it a premier
+								esports spectacle, drawing millions of viewers
+								to leagues and tournaments. The franchise's
+								resilience, coupled with the passion of players
+								and fans, has solidified Call of Duty esports as
+								a beacon of excellence in competitive gaming.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className='teamPage__players'>
-					<h2 className='heading heading--dark'>Players</h2>
-					<div className='teamPage__players--cards'>
+				<div className="teamPage__players">
+					<h2 className="heading heading--dark">Players</h2>
+					<div className="teamPage__players--cards">
 						<PlayerCard
 							Position={""}
 							Alias={"RicheeUS"}
