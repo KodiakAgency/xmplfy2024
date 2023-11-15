@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import KodiakLogo from "../assets/img/sponsors/kodiak-logo-white.png";
-import RogueEnergy from "../assets/img/sponsors/Rogue Energy-white.png";
+import RogueEnergy from "../assets/img/sponsors/REW.png";
 
 const partners = () => {
 	const [active, setActive] = useState("kodiak");
 
 	return (
 		<Layout>
-			<div className='partnerPage'>
-				<div className='partnerPage__body'>
-					<h2 className='heading uppercase'>
-						Our <span className='blue'>Partners</span>
+			<div className="partnerPage">
+				<div className="partnerPage__body">
+					<h2 className="heading uppercase">
+						Our <span className="blue">Partners</span>
 					</h2>
 
-					<div className='partnerPage__grid'>
+					<div className="partnerPage__grid">
 						<div
 							className={
 								active === "kodiak"
@@ -25,7 +25,7 @@ const partners = () => {
 							onClick={() => {
 								setActive("kodiak");
 							}}>
-							<Image src={KodiakLogo} alt='' />
+							<Image src={KodiakLogo} alt="" />
 						</div>
 						<div
 							className={
@@ -36,11 +36,11 @@ const partners = () => {
 							onClick={() => {
 								setActive("rogue");
 							}}>
-							<Image src={RogueEnergy} alt='' />
+							<Image src={RogueEnergy} alt="" />
 						</div>
 					</div>
 
-					<div className='partnerPage__bio'>
+					<div className="partnerPage__bio">
 						{active === "rogue" ? (
 							<p>
 								Rogue is a gaming company at heart. We strive to
