@@ -1,26 +1,25 @@
+import React, { Component, FormEvent, ChangeEvent } from "react";
 import Layout from "../components/Layout";
 
-import React, { Component, useState } from "react";
+interface InquiriesState {
+	subject: string;
+	message: string;
+	email: string;
+}
 
-// function colorChange() {
-// 	const [color, setColor] = useState("initialColor"); // Set an initial color value
-// 	// Your component logic here
-// 	// 0x007bff
-// }
-class inquiries extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			subject: "Careers",
-			message: "",
-			email: "",
-		};
-		this.webhookUrl =
-			"https://discord.com/api/webhooks/1158619139502522398/3xCgAREgAdYIzzegEo0PAO5hVW4KZ7z9v1moDbiwWVYK_-dc237lqHQcfD-Uexq8-g_g";
-	}
+class Inquiries extends Component {
+	private webhookUrl: string =
+		"https://discord.com/api/webhooks/1158619139502522398/3xCgAREgAdYIzzegEo0PAO5hVW4KZ7z9v1moDbiwWVYK_-dc237lqHQcfD-Uexq8-g_g";
 
-	handleSubmit = async (e) => {
+	state: InquiriesState = {
+		subject: "Careers",
+		message: "",
+		email: "",
+	};
+
+	handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
+		console.log("Form submitted");
 
 		if (!this.state.message.trim()) {
 			alert("Please enter a message.");
@@ -30,43 +29,46 @@ class inquiries extends Component {
 
 		try {
 			if (this.state.subject === "Careers") {
-				color = 5763719; //  green
+				color = "5763719"; //  green
 			} else if (this.state.subject === "Partnerships") {
-				color = 15844367; // gold
+				color = "15844367"; // gold
 			} else if (this.state.subject === "Become A Player") {
-				color = 15105570; // orange
+				color = "15105570"; // orange
 			} else if (this.state.subject === "Become A Content Creator") {
-				color = 10181046; // purple
+				color = "10181046"; // purple
 			} else if (this.state.subject === "Other") {
-				color = 3447003; // blue
+				color = "3447003"; // blue
 			}
-			console.log(color);
+
+			console.log("Color:", color);
+
 			const response = await fetch(this.webhookUrl, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
-					username: this.state.email || "Anonymous", // Use the email as the sender's name, or 'Anonymous' if no email provided
+					username: this.state.email || "Anonymous",
 					content: "@here",
 					embeds: [
 						{
-							title: `Subject: ${this.state.subject}\nEmail:  ${
+							title: `Subject: ${this.state.subject}\nEmail: ${
 								this.state.email || "N/A"
 							}`,
 							description: `${this.state.message}\n`,
-							color: color, // Change to your desired embed color (hex)
+							color: parseInt(color, 10), // Parse color as an integer
 						},
 					],
 				}),
 			});
+
+			console.log("Fetch response:", response);
 
 			if (response.ok) {
 				this.setState({
 					subject: "General Inquiry",
 					message: "",
 					email: "",
-					color: "0x007bff",
 				});
 			} else {
 				console.error("Failed to send message to Discord.");
@@ -98,7 +100,9 @@ class inquiries extends Component {
 											required
 											name="subject"
 											value={this.state.subject}
-											onChange={(e) =>
+											onChange={(
+												e: ChangeEvent<HTMLSelectElement>,
+											) =>
 												this.setState({
 													subject: e.target.value,
 												})
@@ -116,7 +120,6 @@ class inquiries extends Component {
 												Become A Content Creator
 											</option>
 											<option value="Other">Other</option>
-											{/* Add more subject options as needed */}
 										</select>
 									</div>
 									<div className="email">
@@ -131,7 +134,9 @@ class inquiries extends Component {
 											name="email"
 											required
 											value={this.state.email}
-											onChange={(e) =>
+											onChange={(
+												e: ChangeEvent<HTMLInputElement>,
+											) =>
 												this.setState({
 													email: e.target.value,
 												})
@@ -151,7 +156,9 @@ class inquiries extends Component {
 										id="message"
 										name="message"
 										value={this.state.message}
-										onChange={(e) =>
+										onChange={(
+											e: ChangeEvent<HTMLTextAreaElement>,
+										) =>
 											this.setState({
 												message: e.target.value,
 											})
@@ -172,4 +179,4 @@ class inquiries extends Component {
 	}
 }
 
-export default inquiries;
+export default Inquiries;
