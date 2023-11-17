@@ -78,7 +78,7 @@ const HeaderInterface = () => {
 														Fifa
 													</Link>
 												</li>
-												<li>
+												{/* <li>
 													<Link
 														className='links text-color-light'
 														href={
@@ -86,7 +86,7 @@ const HeaderInterface = () => {
 														}>
 														Rocket League
 													</Link>
-												</li>
+												</li> */}
 											</ul>
 										</div>
 									)}
@@ -130,13 +130,13 @@ const HeaderInterface = () => {
 									Fifa
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link
 									className='mobileNav__link text-color-light'
 									href={"/teams/rocket-league"}>
 									Rocket League
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link
 									className='mobileNav__link text-color-light'

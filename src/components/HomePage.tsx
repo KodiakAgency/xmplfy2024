@@ -44,13 +44,13 @@ function Home() {
 									description={cs2_description}
 								/>
 							</Link>
-							<Link href={"/teams/rocket-league"}>
+							{/* <Link href={"/teams/rocket-league"}>
 								<GameCards
 									game={"rl"}
 									title={"Rocket League"}
 									description={rl_description}
 								/>
-							</Link>
+							</Link> */}
 							<Link href={"/teams/fifa"}>
 								<GameCards
 									game={"fifa"}
