@@ -7,13 +7,13 @@ import PlayerCard from "../../components/PlayerCard";
 const csgo = () => {
 	return (
 		<Layout>
-			<section className='teamPage cs2'>
-				<div className='teamPage__cover'></div>
-				<div className='teamPage__body'>
-					<div className='teamPage__content'>
+			<section className="teamPage cs2">
+				<div className="teamPage__cover"></div>
+				<div className="teamPage__body">
+					<div className="teamPage__content">
 						<h2>Counter-Strike 2</h2>
-						<div className='teamPage__content--team'>
-							<Image src={csChar} alt='' />
+						<div className="teamPage__content--team">
+							<Image src={csChar} alt="" />
 							<p>
 								Dating back to Counter-Strike: Global Offensive,
 								xmplfy has had a long standing presence in the
@@ -28,9 +28,9 @@ const csgo = () => {
 						</div>
 					</div>
 				</div>
-				<div className='teamPage__players'>
-					<h2 className='heading heading--dark'>Players</h2>
-					<div className='teamPage__players--cards'>
+				<div className="teamPage__players">
+					<h2 className="heading heading--dark">Players</h2>
+					<div className="teamPage__players--cards">
 						<PlayerCard
 							Position={"Rifler"}
 							Alias={"Darke9k"}
@@ -57,10 +57,10 @@ const csgo = () => {
 						/>
 						<PlayerCard
 							Position={"Rifler"}
-							Alias={"Girthquake"}
-							Name={"Matt Locher"}
-							x_link={"https://x.com/GirthquakeCS"}
-							stream_link={"https://twitch.tv/girthquakecs"}
+							Alias={"JUICEY"}
+							Name={"Nick Juicey"}
+							x_link={"https://x.com/xmplfy"}
+							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
@@ -74,9 +74,9 @@ const csgo = () => {
 					</div>
 				</div>
 
-				<div className='teamPage__players'>
-					<h2 className='heading heading--dark'>Support</h2>
-					<div className='teamPage__players--cards'>
+				<div className="teamPage__players">
+					<h2 className="heading heading--dark">Support</h2>
+					<div className="teamPage__players--cards">
 						<PlayerCard
 							Position={"Substitute"}
 							Alias={"rEqN_"}
