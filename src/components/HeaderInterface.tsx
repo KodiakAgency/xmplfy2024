@@ -19,18 +19,18 @@ const HeaderInterface = () => {
 	};
 
 	return (
-		<div className='interface height'>
-			<div className='container flex justify-space-between align-items-center height'>
-				<div className='interface__left'>
-					<div className='branding'>
-						<Link className='branding links height flex' href={"/"}>
-							<Image src={bradingImage} alt='xmplfy logo'></Image>
+		<div className="interface height">
+			<div className="container flex justify-space-between align-items-center height">
+				<div className="interface__left">
+					<div className="branding">
+						<Link className="branding links height flex" href={"/"}>
+							<Image src={bradingImage} alt="xmplfy logo"></Image>
 						</Link>
 					</div>
 				</div>
-				<div className='interface__right'>
+				<div className="interface__right">
 					<div
-						className='mobile-menu-icon'
+						className="mobile-menu-icon"
 						onClick={toggleMobileMenu}>
 						<RxHamburgerMenu />
 					</div>
@@ -51,20 +51,11 @@ const HeaderInterface = () => {
 									onMouseLeave={toggleTeamsDropdown}>
 									TEAMS <BsCaretDownFill />
 									{isTeamsDropdownOpen && (
-										<div className='dropdown-content'>
+										<div className="dropdown-content">
 											<ul>
 												<li>
 													<Link
-														className='links text-color-light'
-														href={
-															"/teams/call-of-duty"
-														}>
-														Call of Duty
-													</Link>
-												</li>
-												<li>
-													<Link
-														className='links text-color-light'
+														className="links text-color-light"
 														href={
 															"/teams/counter-strike"
 														}>
@@ -73,9 +64,25 @@ const HeaderInterface = () => {
 												</li>
 												<li>
 													<Link
-														className='links text-color-light'
+														className="links text-color-light"
+														href={"/teams/content"}>
+														Creators
+													</Link>
+												</li>
+												<li>
+													<Link
+														className="links text-color-light"
 														href={"/teams/fifa"}>
 														Fifa
+													</Link>
+												</li>
+												<li>
+													<Link
+														className="links text-color-light"
+														href={
+															"/teams/call-of-duty"
+														}>
+														Call of Duty
 													</Link>
 												</li>
 												{/* <li>
@@ -94,40 +101,54 @@ const HeaderInterface = () => {
 							</li>
 							<li>
 								<Link
-									className='links text-color-light'
+									className="links text-color-light"
 									href={"/partners"}>
 									PARTNERS
 								</Link>
 							</li>
 							<li>
 								<a
-									className='links text-color-light'
+									className="links text-color-light"
 									href={"https://discord.gg/mGGQtZb5zm"}
-									target='_blank'>
+									target="_blank">
 									DISCORD
 								</a>
 							</li>
-						</ul>
-						<ul className='interface__mobileNav linkGroup flex'>
 							<li>
 								<Link
-									className='mobileNav__link text-color-light'
+									href="/inquiries"
+									className="links text-color-light">
+									CONTACT
+								</Link>
+							</li>
+						</ul>
+						<ul className="interface__mobileNav linkGroup flex">
+							<li>
+								<Link
+									className="mobileNav__link text-color-light"
 									href={"/teams/call-of-duty"}>
 									Call of Duty
 								</Link>
 							</li>
 							<li>
 								<Link
-									className='mobileNav__link text-color-light'
+									className="mobileNav__link text-color-light"
 									href={"/teams/counter-strike"}>
 									Counter-Strike
 								</Link>
 							</li>
 							<li>
 								<Link
-									className='mobileNav__link text-color-light'
+									className="mobileNav__link text-color-light"
 									href={"/teams/fifa"}>
 									Fifa
+								</Link>
+							</li>
+							<li>
+								<Link
+									className="mobileNav__link text-color-light"
+									href={"/teams/content"}>
+									Creators
 								</Link>
 							</li>
 							{/* <li>
@@ -139,18 +160,25 @@ const HeaderInterface = () => {
 							</li> */}
 							<li>
 								<Link
-									className='mobileNav__link text-color-light'
+									className="mobileNav__link text-color-light"
 									href={"/partners"}>
 									PARTNERS
 								</Link>
 							</li>
 							<li>
 								<a
-									className='mobileNav__link text-color-light'
+									className="mobileNav__link text-color-light"
 									href={"https://discord.gg/mGGQtZb5zm"}
-									target='_blank'>
+									target="_blank">
 									DISCORD
 								</a>
+							</li>
+							<li>
+								<Link
+									className="mobileNav__link text-color-light"
+									href={"/inquiries"}>
+									CONTACT
+								</Link>
 							</li>
 						</ul>
 					</div>
