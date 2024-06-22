@@ -40,7 +40,7 @@ const csgo = () => {
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
-							Position={"IGL"}
+							Position={"Rifler"}
 							Alias={"nrb"}
 							Name={"Nicholas Brugna"}
 							x_link={"https://x.com/nrbcs"}
@@ -48,12 +48,12 @@ const csgo = () => {
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
-							Position={"AWP"}
-							Alias={"Hoozh"}
-							Name={"Aidan Labaschin"}
-							x_link={"https://x.com/hoozhur"}
-							stream_link={"https://twitch.tv/hoozhur"}
-							youtube_link={"https://youtube.com/@xmplfy"}
+							Position={"AWP & IGL"}
+							Alias={"JSP"}
+							Name={"Joe Chmielewski"}
+							x_link={"https://x.com/99jsp"}
+							stream_link={"https://twitch.tv/99jsp"}
+							youtube_link={"https://youtube.com/@99jsp"}
 						/>
 						<PlayerCard
 							Position={"Rifler"}
@@ -80,9 +80,18 @@ const csgo = () => {
 						<PlayerCard
 							Position={"Substitute"}
 							Alias={"rEqN_"}
-							Name={"Some Name"}
+							Name={""}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
+							youtube_link={"https://youtube.com/@xmplfy"}
+						/>
+
+						<PlayerCard
+							Position={"Substitute"}
+							Alias={"Hoozh"}
+							Name={"Aidan Labaschin"}
+							x_link={"https://x.com/hoozhur"}
+							stream_link={"https://twitch.tv/hoozhur"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 					</div>
