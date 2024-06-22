@@ -8,8 +8,11 @@ interface InquiriesState {
 }
 
 class Inquiries extends Component {
-	private webhookUrl: string =
+	private defaultWebhookUrl: string =
 		"https://discord.com/api/webhooks/1158619139502522398/3xCgAREgAdYIzzegEo0PAO5hVW4KZ7z9v1moDbiwWVYK_-dc237lqHQcfD-Uexq8-g_g";
+	private playerWebhookUrl: string =
+		"https://discord.com/api/webhooks/1253862765316018278/W-FsC5RmGF049CmFhd_CYrO8VhXsD96i668uUyivhla3SLrgVVtG4SUwpejMLRqcGhpJ";
+	"Become A Player";
 
 	state: InquiriesState = {
 		subject: "Careers",
@@ -26,23 +29,27 @@ class Inquiries extends Component {
 			return;
 		}
 		let color = "";
+		let webhookUrl = this.defaultWebhookUrl; // Default webhook URL
 
 		try {
 			if (this.state.subject === "Careers") {
-				color = "5763719"; //  green
+				color = "5763719"; // green
 			} else if (this.state.subject === "Partnerships") {
 				color = "15844367"; // gold
 			} else if (this.state.subject === "Become A Player") {
 				color = "15105570"; // orange
+				webhookUrl = this.playerWebhookUrl; // Use different webhook URL for "Become A Player"
 			} else if (this.state.subject === "Become A Content Creator") {
 				color = "10181046"; // purple
+				webhookUrl = this.playerWebhookUrl; // Use different webhook URL for "Become A Player"
 			} else if (this.state.subject === "Other") {
 				color = "3447003"; // blue
 			}
 
 			console.log("Color:", color);
+			console.log("Webhook URL:", webhookUrl);
 
-			const response = await fetch(this.webhookUrl, {
+			const response = await fetch(webhookUrl, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -61,23 +68,13 @@ class Inquiries extends Component {
 					],
 				}),
 			});
-
-			console.log("Fetch response:", response);
-
-			if (response.ok) {
-				this.setState({
-					subject: "General Inquiry",
-					message: "",
-					email: "",
-				});
-			} else {
-				console.error("Failed to send message to Discord.");
-			}
 		} catch (error) {
-			console.error("Error sending message:", error);
+			console.error("Error sending inquiry:", error);
+			alert(
+				"There was an error sending your inquiry. Please try again later.",
+			);
 		}
 	};
-
 	render() {
 		return (
 			<Layout>
