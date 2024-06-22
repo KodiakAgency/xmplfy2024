@@ -62,6 +62,13 @@
 	}
 }
 
+.content {
+	.teamPage__cover {
+		background-image: url("../../assets/img/2.png");
+		background-position: 0 -45vh;
+	}
+}
+
 .cod {
 	.teamPage__cover {
 		background-image: url("../../assets/img/cod-backing.jpeg");
@@ -144,7 +151,8 @@
 			align-items: center;
 			margin-top: $gutter-x; /* Adjust top margin */
 
-			.playerCard {
+			.playerCard,
+			.contentCard {
 				margin-right: 0;
 			}
 		}

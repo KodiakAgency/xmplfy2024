@@ -139,6 +139,19 @@
 	filter: grayscale(0.5);
 }
 
+.gameCards__creator {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.95)
+		),
+		url("../../assets/img/content.png");
+	background-position: -0vw;
+	background-repeat: no-repeat;
+	background-size: auto 70vh;
+	filter: grayscale(0.5);
+}
+
 .gameCards__rl {
 	background-image: linear-gradient(
 			to bottom,
