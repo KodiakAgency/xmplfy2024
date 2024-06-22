@@ -34,6 +34,7 @@ const csgo = () => {
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 							tiktok_link={"https://tiktok.com/@xmplfygg"}
+							instagram_link={""}
 						/>
 
 						<ContentCard
@@ -44,6 +45,7 @@ const csgo = () => {
 							youtube_link={
 								"https://youtube.com/@cuti3_p13?si=qh-xL7_SC7elWJdK"
 							}
+							tiktok_link={""}
 							instagram_link={
 								"https://www.instagram.com/cuti3_p13_ttv?igsh=am44aW9sZWJ3MDJ4&utm_source=qr"
 							}
