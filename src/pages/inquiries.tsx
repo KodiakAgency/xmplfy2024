@@ -11,7 +11,7 @@ class Inquiries extends Component {
 	private defaultWebhookUrl: string =
 		"https://discord.com/api/webhooks/1158619139502522398/3xCgAREgAdYIzzegEo0PAO5hVW4KZ7z9v1moDbiwWVYK_-dc237lqHQcfD-Uexq8-g_g";
 	private playerWebhookUrl: string =
-		"https://discord.com/api/webhooks/1253862765316018278/W-FsC5RmGF049CmFhd_CYrO8VhXsD96i668uUyivhla3SLrgVVtG4SUwpejMLRqcGhpJ";
+		"https://discord.com/api/webhooks/1281756512242634844/SrhZFZXqawjanymfiXHqneFEagKlxkn4oY-HfaZUqQtPN59GNnQDk-kXpPTJYlLilDIR";
 	"Become A Player";
 
 	state: InquiriesState = {
