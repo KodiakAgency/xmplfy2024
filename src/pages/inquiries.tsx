@@ -9,7 +9,7 @@ interface InquiriesState {
 
 class Inquiries extends Component {
 	private defaultWebhookUrl: string =
-		"https://discord.com/api/webhooks/1158619139502522398/3xCgAREgAdYIzzegEo0PAO5hVW4KZ7z9v1moDbiwWVYK_-dc237lqHQcfD-Uexq8-g_g";
+		"https://discord.com/api/webhooks/1281771336141766670/hYK7xsOMk2HPoEwGNaHvukypteo0grPKW7GBEV5AvNLKeFsouU59KMGd1QOPElW6F9_W";
 	private playerWebhookUrl: string =
 		"https://discord.com/api/webhooks/1281756512242634844/SrhZFZXqawjanymfiXHqneFEagKlxkn4oY-HfaZUqQtPN59GNnQDk-kXpPTJYlLilDIR";
 	"Become A Player";
