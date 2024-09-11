@@ -59,7 +59,7 @@ function BrandGuide() {
 				<div className="logo_download">
 					<a
 						className="links"
-						href="https://cdn.discordapp.com/attachments/1137092900526760078/1158296359754023034/xmplfy.zip?ex=651bbb0c&is=651a698c&hm=dfb18df0998a65132d293b27c06d4055db996b5a7addf41c4aea73c93f2151be&" // Replace with the actual file URL
+						href="https://cdn.discordapp.com/attachments/1280560710174244995/1283256654435188787/xmplfy_logos.zip?ex=66e25564&is=66e103e4&hm=8eae427cee0640bac27902865b7b5dc50aebc9e4332256cc33be09fe65eefd4a&" // Replace with the actual file URL
 						target="_blank"
 						rel="noopener noreferrer">
 						DOWNLOAD LOGOS
