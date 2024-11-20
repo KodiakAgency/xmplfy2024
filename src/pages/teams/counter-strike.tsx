@@ -71,14 +71,6 @@ const csgo = () => {
 							stream_link={"https://twitch.tv/hoozhur"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
-						<PlayerCard
-							Position={"Rifler"}
-							Alias={"Jynx"}
-							Name={"Mark Coyu"}
-							x_link={"https://x.com/1jynx"}
-							stream_link={"https://twitch.tv/1jynx"}
-							youtube_link={"https://youtube.com/@xmplfy"}
-						/>
 					</div>
 				</div>
 
