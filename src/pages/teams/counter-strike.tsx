@@ -32,7 +32,7 @@ const csgo = () => {
 					<h2 className="heading heading--dark">Players</h2>
 					<div className="teamPage__players--cards">
 						<PlayerCard
-							Position={"Rifler"}
+							Position={"Rifler & IGL"}
 							Alias={"Darke9k"}
 							Name={"Austin Turner"}
 							x_link={"https://x.com/darke9k"}
@@ -48,12 +48,12 @@ const csgo = () => {
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
-							Position={"AWP & IGL"}
-							Alias={"JSP"}
-							Name={"Joe Chmielewski"}
-							x_link={"https://x.com/99jsp"}
-							stream_link={"https://twitch.tv/99jsp"}
-							youtube_link={"https://youtube.com/@99jsp"}
+							Position={"Rifler"}
+							Alias={"Red"}
+							Name={"Ashton"}
+							x_link={"https://x.com/xmplfy"}
+							stream_link={"https://twitch.tv/xmplfygg"}
+							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
 							Position={"Rifler"}
@@ -61,6 +61,14 @@ const csgo = () => {
 							Name={"Nick Juicey"}
 							x_link={"https://x.com/xmplfy"}
 							stream_link={"https://twitch.tv/xmplfygg"}
+							youtube_link={"https://youtube.com/@xmplfy"}
+						/>
+						<PlayerCard
+							Position={"Awper"}
+							Alias={"Hoozh"}
+							Name={"Aidan Labaschin"}
+							x_link={"https://x.com/hoozhur"}
+							stream_link={"https://twitch.tv/hoozhur"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 						<PlayerCard
@@ -85,13 +93,21 @@ const csgo = () => {
 							stream_link={"https://twitch.tv/xmplfygg"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
+						<PlayerCard
+							Position={"Substitute"}
+							Alias={"JSP"}
+							Name={"Joe"}
+							x_link={"https://x.com/99jsp"}
+							stream_link={"https://twitch.tv/99jsp"}
+							youtube_link={"https://youtube.com/@99jsp"}
+						/>
 
 						<PlayerCard
 							Position={"Substitute"}
-							Alias={"Hoozh"}
-							Name={"Aidan Labaschin"}
-							x_link={"https://x.com/hoozhur"}
-							stream_link={"https://twitch.tv/hoozhur"}
+							Alias={"Jynx"}
+							Name={"Mark Coyu"}
+							x_link={"https://x.com/1jynx"}
+							stream_link={"https://twitch.tv/1jynx"}
 							youtube_link={"https://youtube.com/@xmplfy"}
 						/>
 					</div>
