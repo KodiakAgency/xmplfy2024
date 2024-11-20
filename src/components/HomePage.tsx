@@ -12,7 +12,7 @@ import Link from "next/link";
 import GameCards from "./GameCards";
 
 function Home() {
-	let cs2_description = `Counter-Strike, our team consisting of some of the best North American up and coming players. JSP, Jynx, nrb, Juicy, Darke. These players have been with us for multiple seasons and we hope you enjoy every bit of them as we do!`;
+	let cs2_description = `Counter-Strike, our team consisting of some of the best North American up and coming players. Red, Hoozh, nrb, Juicy, Darke. These players have been with us for multiple seasons and we hope you enjoy every bit of them as we do!`;
 	let rl_description = `Rocket League, our team consist of college atheletes and teammates that have been together for very long. Roupus, Zekers, and Asuna are fantastic North American Rocket League players who can only go up.`;
 	let cod_description = `Call Of Duty, an esport that has been here for a long time. We look forward to keeping Call Of Duty in our program and seeing how far this esport can go!`;
 	let fifa_description = `Fifa, soccer or football? It's soccer, and Bortap demonstrates the best mechanics as our Fifa player! Check out highlights and much more from Bortap!`;
